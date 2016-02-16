@@ -8,5 +8,7 @@ circumference = 2 * math.pi * radiusInt
 
 area = math.pi * (radiusInt ** 2)
 
-print "The circumference is: ", circumference,\
-      "The area is :", area
+print "The circumference is: ", circumference, \
+    "The area is :", area
+
+print "The id of area object: ", id(area)
