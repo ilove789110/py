@@ -10,3 +10,5 @@ print typeStr
 # if
 #
 # int1 = int(raw1)
+
+print int(True)
