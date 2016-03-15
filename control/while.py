@@ -8,3 +8,10 @@ while x < 10:
     x += 1
 
 print "end"
+
+while 1 < 2:
+    print "while"
+
+    break  # break跳过循环和else子句
+else:
+    print "else"
