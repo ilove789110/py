@@ -18,5 +18,7 @@ del class_list[0]
 
 print class_list
 
+print type(class_list)
+
 print 'These students are :',
 for student in class_list: print student,
