@@ -55,4 +55,3 @@ def classify0(inX, inY, dataSet, labels, k):
 
 
 print classify0(1, 1, group, labels, 3)
-
