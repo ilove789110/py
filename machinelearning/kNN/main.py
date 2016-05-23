@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
+import operator
+
 from numpy import *
 
 import kNN
-import operator
 
 group, labels = kNN.createDataSet()
 
@@ -16,10 +17,10 @@ print group.shape[1]
 print labels
 
 
-def classify0(inX, inY, dataSet, labels, k):
+def classify0(inX, dataSet, labels, k):
     dataSetSize = dataSet.shape[0]
 
-    mat = tile((inX, inY), (dataSetSize, 1))
+    mat = tile(inX, (dataSetSize, 1))
 
     diffMat = mat - dataSet
 
@@ -54,4 +55,4 @@ def classify0(inX, inY, dataSet, labels, k):
         return sortedClassCount[0][0]
 
 
-print classify0(1, 1, group, labels, 3)
+print classify0([0, 0], group, labels, 3)
