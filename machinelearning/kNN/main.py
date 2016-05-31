@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 import operator
 
-from numpy import *
+from kNN import *
 
-import kNN
-
-group, labels = kNN.createDataSet()
+group, labels = createDataSet()
 
 print group
 
@@ -56,3 +54,5 @@ def classify0(inX, dataSet, labels, k):
 
 
 print classify0([0, 0], group, labels, 3)
+
+file2matrix("E:\tmp\data")
